@@ -1,70 +1,37 @@
-
-
 function Home() {
-  return (
-    <section
-    style={{
-        backgroundColor: "#312e81",
-        display: "flex",
-        justifyContent: "center"
-    }}>
-      <article
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        color: "white",
-        width: "100%",
-        maxWidth: "1280px"
-      }}>
-        <div
-        style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "1rem",
-            paddingTop: "1rem",
-            paddingBottom: "1rem"
-        }}>
-          <h2
-          style={{
-            fontSize: "3rem",
-            fontWeight: "bold"
-          }}>
-            Seja Bem-Vinde</h2>
+    return (
+        <>
+            <div className="bg-indigo-900 flex justify-center">
+                <div className='container grid grid-cols-1 md:grid-cols-2 text-white'>
 
-          <p
-          style={{
-            fontSize: "1.25rem"
-          }}>
-            Expresse aqui seus pensamentos e opiniões.</p>
-          <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            gap: "1rem"
-          }}>
-            <div
-            style={{
-                borderRadius: "0.5rem",
-                color: "white",
-                border: "2px solid white",
-                padding: "0.5rem 1rem"
-            }}>Nova Postagem</div>
-          </div>
-        </div>
-        <figure
-        style={{
-            display: "flex",
-            justifyContent: "center"
-        }}>
-          <img src="https://i.imgur.com/fyfri1v.png" alt="Imagem Página Home"
-          style={{ width: "70%"}} />
-        </figure>
-      </article>
-    </section>
-  );
+                    <div className="flex justify-center pb-4 md:pb-0 order-first md:order-last">
+                        <img
+                            src="https://i.imgur.com/fyfri1v.png"
+                            alt="Imagem Página Home"
+                            className='w-1/2 md:w-2/3'
+                        />
+                    </div>
+
+                    <div className="flex flex-col gap-4 items-center justify-center py-4 text-center md:text-left order-last md:order-first">
+                        <h2 className='text-3xl md:text-5xl font-bold'>
+                            Seja Bem Vinde!
+                        </h2>
+                        <p className='text-base md:text-xl'>
+                            Expresse aqui seus pensamentos e opniões
+                        </p>
+
+                        <div className="flex justify-around gap-4">
+                            <div className='rounded text-white 
+                                            border-white border-solid border-2 py-2 px-4'>
+                                Nova Postagem
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </>
+    )
 }
- 
-export default Home;
- 
+
+export default Home
